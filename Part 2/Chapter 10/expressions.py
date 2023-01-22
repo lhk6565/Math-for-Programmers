@@ -294,7 +294,7 @@ class Function():
             return self.make_latex(arg_latex)
         else:
             return " \\operatorname{{ {} }} \\left( {} \\right)".format(self.name, arg_latex)
-  
+
 class Apply(Expression):
     def __init__(self,function,argument):
         self.function = function
